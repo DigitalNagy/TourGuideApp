@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:fillViewport="true"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_city"
+                    android:layout_width="@dimen/city_icon_width"
+                    android:layout_height="@dimen/city_icon_height"/>
+
+                <TextView
+                    style="@style/PanelHeader"
+                    android:text="@string/label_forecast" />
+
+                <TextView
+                    android:id="@+id/text_panel_weather"
+                    style="@style/CityPanelGreen"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CityFactHeader"
+                    android:text="@string/label_country" />
+                <TextView
+                    android:id="@+id/text_country"
+                    style="@style/CityFactPanel" />
+                <TextView
+                    style="@style/CityFactHeader"
+                    android:text="@string/label_language" />
+                <TextView
+                    android:id="@+id/text_language"
+                    style="@style/CityFactPanel" />
+                <TextView
+                    style="@style/CityFactHeader"
+                    android:text="@string/label_airports" />
+                <TextView
+                    android:id="@+id/text_airport"
+                    style="@style/CityFactPanel" />
+                <TextView
+                    style="@style/CityFactHeader"
+                    android:text="@string/label_transport" />
+                <TextView
+                    android:id="@+id/text_transport"
+                    style="@style/CityFactPanel" />
+                <TextView
+                    style="@style/PanelHeader"
+                    android:text="@string/label_time" />
+                <TextClock
+                    android:id="@+id/textclock_localtime"
+                    style="@style/CityPanelGreen"
+                    android:textSize="@dimen/font_xlarge"
+                    android:format12Hour="hh:mm:ss a"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/PanelHeader"
+            android:background="@color/colorPink"
+            android:text="@string/label_about_city" />
+
+        <TextView
+            android:id="@+id/text_panel_about"
+            style="@style/CityPanelGreen"
+            android:background="@color/colorLightGrey"
+            android:textColor="@color/colorText"/>
+
+    </LinearLayout>
+</ScrollView>
