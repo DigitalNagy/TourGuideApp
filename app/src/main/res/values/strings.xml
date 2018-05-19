@@ -24,17 +24,6 @@
     <string name="label_tab_4">Hotels</string>
     <string name="label_tab_5">Dining</string>
 
-    <!-- OpenWeather App ID -->
-    <string name="openweather_appid">INSERT_OWM_APPID_HERE</string>
-
-
-    <!-- -->
-    <!-- Log Exception Error Messages -->
-    <!-- -->
-    <string name="err_json_parsing">Problem parsing the Weather JSON results</string>
-    <string name="err_create_url">Error with creating URL</string>
-
-
     <!-- -->
     <!-- Records for City Table -->
     <!-- -->
